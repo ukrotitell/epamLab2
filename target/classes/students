@@ -1,0 +1,28 @@
+[ {
+  "id" : 1,
+  "name" : "Igor",
+  "programId" : 1,
+  "marks" : {
+    "Math" : 75,
+    "Physics" : 80
+  },
+  "avgGrade" : 77.5
+}, {
+  "id" : 2,
+  "name" : "Igor",
+  "programId" : 1,
+  "marks" : {
+    "Math" : 10,
+    "Physics" : 10
+  },
+  "avgGrade" : 10.0
+}, {
+  "id" : 3,
+  "name" : "Igor",
+  "programId" : 2,
+  "marks" : {
+    "History" : 40,
+    "Russian" : 40
+  },
+  "avgGrade" : 40.0
+} ]
