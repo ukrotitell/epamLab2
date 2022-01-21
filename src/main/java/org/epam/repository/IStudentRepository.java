@@ -16,4 +16,5 @@ public interface IStudentRepository {
     void sortByAvgGrade();
     void createReport();
     Map<Integer, Double> getGradesReport();
+    int returnStudentIndex(Student student);
 }

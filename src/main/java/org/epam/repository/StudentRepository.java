@@ -42,7 +42,7 @@ public class StudentRepository implements IStudentRepository {
 
     @Override
     public void updateStudent(int index, Student student) {
-        listOfStudents.set(index - 1, student);
+        listOfStudents.set(index, student);
         showStudents();
     }
 
@@ -91,6 +91,11 @@ public class StudentRepository implements IStudentRepository {
             mapOfStudentsAndGrades.put(listOfStudents.get(i).getId(), listOfStudents.get(i).getAvgGrade());
         }
         return mapOfStudentsAndGrades;
+    }
+
+    @Override
+    public int returnStudentIndex(Student student) {
+        return listOfStudents.indexOf(student);
     }
 
 

@@ -66,4 +66,9 @@ public class StudentService implements IStudentService{
     public Map<Integer, Double> getGradesReport() {
         return studentRepository.getGradesReport();
     }
+
+    @Override
+    public int returnStudentIndex(Student student) {
+        return studentRepository.returnStudentIndex(student);
+    }
 }

@@ -61,7 +61,8 @@ public class Operations {
             avgGrade += pair.getValue();
         }
         student.setAvgGrade(avgGrade / marks.size());
-        studentService.updateStudent(studentId, student);
+        int index = studentService.returnStudentIndex(student);
+        studentService.updateStudent(index, student);
     }
 
     public void removeStudentFromList() {
