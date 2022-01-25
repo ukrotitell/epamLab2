@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class StudentsFile {
+public class StudentsParser {
     public List<Student> readStudents() {
         ObjectMapper mapper = new ObjectMapper();
         List<Student> students = null;

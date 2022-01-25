@@ -9,10 +9,13 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProgramsFile {
+public class ProgramsParser {
+    PropertyParser propertyParser = new PropertyParser();
+    String property = propertyParser.getPropertyVariable();
+
     public List<Program> getListOfPrograms() throws FileNotFoundException, IllegalInitialDataException {
         List<Program> programList = new ArrayList<>();
-        InputStream inputStream = new FileInputStream("src/main/resources/properties.yml");
+        InputStream inputStream = new FileInputStream("src/main/resources/"+property);
         Yaml yaml = new Yaml(new Constructor(Program.class));
         try {
             for (Object object : yaml.loadAll(inputStream)) {

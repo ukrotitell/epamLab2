@@ -1,0 +1,25 @@
+
+`	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.(¦ìãŒüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(íÍ²’üÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(å”ª
+S	java:S106"9Replace this use of System.out or System.err by a logger.(š¿ïøÿÿÿÿ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(ˆêÒí
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(˜×°
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(Â«±üÿÿÿÿ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(î¤Í‘
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(ÖïŒ øÿÿÿÿ
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(‘§’Œ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(¥ê‰ªüÿÿÿÿ
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(˜Çâşşÿÿÿÿ
+S	java:S106["9Replace this use of System.out or System.err by a logger.(‰Úùİúÿÿÿÿ
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(å Ğ§ıÿÿÿÿ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(¥ê‰ªüÿÿÿÿ
+M	java:S106h"9Replace this use of System.out or System.err by a logger.(ïõºf
+S	java:S106k"9Replace this use of System.out or System.err by a logger.(†Óİ˜ùÿÿÿÿ
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(ûİ‚˜üÿÿÿÿ
+N	java:S106|"9Replace this use of System.out or System.err by a logger.(£øàØ
+[	java:S106"9Replace this use of System.out or System.err by a logger.(œûı‹úÿÿÿÿ8í÷çÈç/
+k
+java:S3655Q"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ıŸ›Üıÿÿÿÿ
+k
+java:S36554"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ıŸ›Üıÿÿÿÿ

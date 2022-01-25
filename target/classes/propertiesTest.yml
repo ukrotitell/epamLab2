@@ -1,0 +1,13 @@
+
+---
+id: 1
+name: Technical
+modules:
+  - id: 1
+    programId: 1
+    name: Math
+    duration: 24
+  - id: 2
+    programId: 1
+    name: Physics
+    duration: 36

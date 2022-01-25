@@ -2,7 +2,7 @@ package org.epam.repository;
 
 import org.epam.entity.Student;
 import org.epam.util.StudentsWriter;
-import org.epam.util.StudentsFile;
+import org.epam.util.StudentsParser;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 public class StudentRepository implements IStudentRepository {
 
-    private StudentsFile studentsFile = new StudentsFile();
+    private StudentsParser studentsFile = new StudentsParser();
     private List<Student> listOfStudents = studentsFile.readStudents();
     private StudentsWriter studentsWriter = new StudentsWriter();
 

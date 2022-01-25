@@ -1,9 +1,16 @@
+package org.epam;
+
+import org.epam.entity.Program;
 import org.epam.operations.Operations;
 import org.epam.repository.IStudentRepository;
 import org.epam.repository.StudentRepository;
 import org.epam.service.IStudentService;
 import org.epam.service.StudentService;
 import org.epam.util.ConsoleOperations;
+import org.epam.util.ProgramsParser;
+import org.epam.util.PropertyParser;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -11,6 +18,12 @@ public class Main {
         IStudentService studentService = new StudentService(studentRepository);
         ConsoleOperations consoleOperations = new ConsoleOperations();
         Operations operations = new Operations(studentService);
+        //
+        ProgramsParser programsParser = new ProgramsParser();
+        List<Program> programs = programsParser.getListOfPrograms();
+        System.out.println(programs);
+        //
+
 
 
         do {

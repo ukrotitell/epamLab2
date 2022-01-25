@@ -6,7 +6,7 @@ import org.epam.entity.Student;
 import org.epam.exception.IllegalInitialDataException;
 import org.epam.service.IStudentService;
 import org.epam.util.ConsoleOperations;
-import org.epam.util.ProgramsFile;
+import org.epam.util.ProgramsParser;
 
 import java.io.*;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.Map;
 
 
 public class Operations {
-    private ProgramsFile programsFile = new ProgramsFile();
+    private ProgramsParser programsFile = new ProgramsParser();
     private ConsoleOperations consoleOperations = new ConsoleOperations();
     private IStudentService studentService;
 

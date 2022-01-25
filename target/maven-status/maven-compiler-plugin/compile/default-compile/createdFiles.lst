@@ -1,0 +1,12 @@
+org\epam\entity\Module.class
+org\epam\util\ConsoleOperations.class
+org\epam\service\IStudentService.class
+org\epam\util\StudentsWriter.class
+org\epam\Main.class
+org\epam\service\StudentService.class
+org\epam\operations\Operations.class
+org\epam\entity\Program.class
+org\epam\repository\IStudentRepository.class
+org\epam\exception\IllegalInitialDataException.class
+org\epam\entity\Student.class
+org\epam\repository\StudentRepository.class

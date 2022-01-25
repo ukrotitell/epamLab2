@@ -1,0 +1,15 @@
+
+m
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÙØ¤Şıÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ƒµ”¯şÿÿÿÿ8ïÖëÁç/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(®íÁ¿ÿÿÿÿÿ8ïÖëÁç/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¯€µŸüÿÿÿÿ8ïÖëÁç/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(šãÃøÿÿÿÿ8ïÖëÁç/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÕÔÍ·ÿÿÿÿÿ8ïÖëÁç/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ìÿÌ¥ıÿÿÿÿ8ğÖëÁç/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(öë²ª8ğÖëÁç/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Øû¹“8ğÖëÁç/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÿı…“8ğÖëÁç/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(è•ÿı8ğÖëÁç/
+0
+java:S1220""Move this file to a named package.
