@@ -6,11 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lab2" />
+        <module name="learning-center-model" />
+        <module name="learning-center-api" />
+        <module name="learning-center-ipml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lab2" target="11" />
+      <module name="learning-center-api" target="11" />
+      <module name="learning-center-ipml" target="11" />
+      <module name="learning-center-model" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

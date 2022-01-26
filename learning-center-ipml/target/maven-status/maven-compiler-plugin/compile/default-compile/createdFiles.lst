@@ -1,0 +1,5 @@
+Main.class
+org\epam\exception\IllegalInitialDataException.class
+org\epam\ProgramsParser.class
+org\epam\operations\Operations.class
+org\epam\PropertyParser.class
