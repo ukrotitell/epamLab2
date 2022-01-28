@@ -26,7 +26,7 @@ public class Main {
 
         do {
             System.out.println("Выберите операцию:");
-            System.out.println("1 - добавить студента");
+            System.out.println("1 - добавить студента!");
             System.out.println("2 - исключить студента");
             System.out.println("3 - поставить оценку за тест по теме");
             System.out.println("4 - рассчитать количество дней до завершения программы");
