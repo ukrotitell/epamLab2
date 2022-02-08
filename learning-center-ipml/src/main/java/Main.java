@@ -1,27 +1,20 @@
-import entity.Program;
-import org.epam.util.ProgramsParser;
-import org.epam.repository.StudentRepository;
 import org.epam.operations.Operations;
-import repository.IStudentRepository;
-import org.epam.util.ConsoleOperations;
-import service.IStudentService;
+import org.epam.repository.IStudentRepository;
+import org.epam.repository.StudentRepository;
 import org.epam.repository.StudentService;
+import org.epam.service.IStudentService;
+import org.epam.util.ConsoleOperations;
+import org.epam.util.StudentsParser;
 
-import java.util.List;
 
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        IStudentRepository studentRepository = new StudentRepository();
+        StudentsParser studentsFile = new StudentsParser();
+        IStudentRepository studentRepository = new StudentRepository(studentsFile);
         IStudentService studentService = new StudentService(studentRepository);
         ConsoleOperations consoleOperations = new ConsoleOperations();
         Operations operations = new Operations(studentService);
-        //
-        ProgramsParser programsParser = new ProgramsParser();
-        List<Program> programs = programsParser.getListOfPrograms();
-        System.out.println(programs);
-        //
-
 
 
         do {

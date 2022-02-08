@@ -9,7 +9,7 @@
   "avgGrade" : 77.5
 }, {
   "id" : 2,
-  "name" : "Igor",
+  "name" : "Marina",
   "programId" : 1,
   "marks" : {
     "Math" : 10,
@@ -18,7 +18,7 @@
   "avgGrade" : 10
 }, {
   "id" : 3,
-  "name" : "Igor",
+  "name" : "Dima",
   "programId" : 2,
   "marks" : {
     "History" : 40,

@@ -1,8 +1,2 @@
-service\IStudentService.class
-util\ConsoleOperations.class
-repository\IStudentRepository.class
-repository\StudentRepository.class
-service\StudentService.class
-util\StudentsParser$1.class
-util\StudentsParser.class
-util\StudentsWriter.class
+org\epam\repository\IStudentRepository.class
+org\epam\service\IStudentService.class

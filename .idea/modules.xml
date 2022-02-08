@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lab2.iml" filepath="$PROJECT_DIR$/lab2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/learning-center-api/learning-center-api.iml" filepath="$PROJECT_DIR$/learning-center-api/learning-center-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/learning-center-ipml/learning-center-ipml.iml" filepath="$PROJECT_DIR$/learning-center-ipml/learning-center-ipml.iml" />
-      <module fileurl="file://$PROJECT_DIR$/learning-center-model/learning-center-model.iml" filepath="$PROJECT_DIR$/learning-center-model/learning-center-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/learning-center-module.iml" filepath="$PROJECT_DIR$/learning-center-module.iml" />
     </modules>
   </component>
 </project>

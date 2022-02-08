@@ -1,0 +1,7 @@
+org\epam\util\ConsoleOperationsTest.class
+org\epam\util\StudentsParserTest.class
+org\epam\repository\StudentServiceTest.class
+org\epam\repository\StudentRepositoryTest$1.class
+org\epam\TestSuite.class
+org\epam\repository\StudentRepositoryTest.class
+org\epam\util\StudentsWriterTest.class

@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id "io.freefair.lombok" version "6.3.0"
+
+
+}
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'org.goncharov.learning-center' as Publication
+            artifactId = 'learning-center-model' as Publication
+            version = '1.0-SNAPSHOT' as Publication
+
+            from components.java
+        }
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

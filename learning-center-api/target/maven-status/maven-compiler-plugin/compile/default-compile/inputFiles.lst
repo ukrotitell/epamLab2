@@ -1,7 +1,2 @@
-D:\epamHomework\lab2\learning-center-api\src\main\java\repository\StudentRepository.java
-D:\epamHomework\lab2\learning-center-api\src\main\java\util\StudentsParser.java
-D:\epamHomework\lab2\learning-center-api\src\main\java\repository\IStudentRepository.java
-D:\epamHomework\lab2\learning-center-api\src\main\java\service\IStudentService.java
-D:\epamHomework\lab2\learning-center-api\src\main\java\service\StudentService.java
-D:\epamHomework\lab2\learning-center-api\src\main\java\util\ConsoleOperations.java
-D:\epamHomework\lab2\learning-center-api\src\main\java\util\StudentsWriter.java
+D:\epamHomework\lab2\learning-center-api\src\main\java\org\epam\service\IStudentService.java
+D:\epamHomework\lab2\learning-center-api\src\main\java\org\epam\repository\IStudentRepository.java
