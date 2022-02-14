@@ -48,8 +48,6 @@
     <profile>
       <id>dev</id>
       <properties>
-        <properties1>src/main/resources/students.json</properties1>
-        <properties2>src/main/resources/students</properties2>
         <properties>propertiesDev.yml</properties>
         <props>false</props>
       </properties>
@@ -57,8 +55,6 @@
     <profile>
       <id>test</id>
       <properties>
-        <properties1>src/test/resources/students.json</properties1>
-        <properties2>src/test/resources/students</properties2>
         <properties>propertiesTest.yml</properties>
         <props>true</props>
       </properties>
@@ -132,7 +128,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>4.2.0</version>
+      <version>4.3.1</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -143,6 +139,24 @@
           <artifactId>byte-buddy-agent</artifactId>
           <groupId>net.bytebuddy</groupId>
         </exclusion>
+        <exclusion>
+          <artifactId>objenesis</artifactId>
+          <groupId>org.objenesis</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>2.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymock</artifactId>
+      <version>4.3</version>
+      <scope>test</scope>
+      <exclusions>
         <exclusion>
           <artifactId>objenesis</artifactId>
           <groupId>org.objenesis</groupId>

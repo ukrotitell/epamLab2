@@ -12,6 +12,7 @@ import org.epam.util.ProgramsParser;
 import org.epam.util.StudentsWriter;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -117,8 +118,8 @@ public class Operations {
         }
     }
 
-    public void createReport() {
-        studentsWriter.writeInFile(studentService.getListOfStudents(), path);
+    public void createReport() throws IOException {
+        studentsWriter.writeInFile(path);
     }
 
     public void getGradesReport() {

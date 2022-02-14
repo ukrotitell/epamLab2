@@ -3,8 +3,8 @@
   "name" : "Igorrrrr",
   "programId" : 1,
   "marks" : {
-    "module1" : 5,
-    "module2" : 33
+    "module2" : 33,
+    "module1" : 5
   },
   "avgGrade" : 19.0
 }, {
@@ -12,8 +12,8 @@
   "name" : "Oleg",
   "programId" : 2,
   "marks" : {
-    "module1" : 5,
-    "module2" : 33
+    "module2" : 33,
+    "module1" : 5
   },
   "avgGrade" : 19.0
 } ]

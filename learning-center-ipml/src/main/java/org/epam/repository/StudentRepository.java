@@ -18,6 +18,9 @@ public class StudentRepository implements IStudentRepository {
     private StudentsParser studentsFile;
     private List<Student> listOfStudents;
 
+    public StudentRepository() {
+    }
+
     public StudentRepository(StudentsParser studentsFile) {
         this.studentsFile = studentsFile;
         listOfStudents = studentsFile.readStudents(path);

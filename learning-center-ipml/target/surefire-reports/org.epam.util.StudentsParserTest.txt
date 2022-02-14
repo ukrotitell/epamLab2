@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.epam.util.StudentsParserTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.049 s <<< FAILURE! - in org.epam.util.StudentsParserTest
-org.epam.util.StudentsParserTest.shouldReadStudents  Time elapsed: 0.043 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
-	at org.epam.util.StudentsParserTest.shouldReadStudents(StudentsParserTest.java:17)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s - in org.epam.util.StudentsParserTest

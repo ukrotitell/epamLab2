@@ -1,3 +1,4 @@
+org\epam\util\MyRunnable.class
 org\epam\repository\StudentService.class
 org\epam\util\ConsoleOperations.class
 org\epam\util\StudentsWriter.class

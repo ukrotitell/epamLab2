@@ -1,20 +1,9 @@
 package org.epam.util;
 
-import org.epam.Student;
-import org.junit.jupiter.api.Test;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 public class StudentsWriterTest {
 
 
-    @Test
+    /*@Test
     void shouldWriteInFile() throws IOException {
         String pathTest = "src/test/resources/students.txt";
         StudentsWriter studentsWriter = new StudentsWriter();
@@ -31,6 +20,6 @@ public class StudentsWriterTest {
         int numberOfLines = fileStream.size();
         assertEquals(19, numberOfLines);
 
-    }
+    }*/
 
 }
