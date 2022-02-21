@@ -2,15 +2,33 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="learning-center-model.test" />
+        <module name="learning-center-model.main" />
+      </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lab2" />
+        <module name="learning-center-api" />
+        <module name="learning-center-ipml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="epam.learning-center" target="11" />
       <module name="lab2" target="11" />
+      <module name="learning-center-impl" target="11" />
+      <module name="learning-center-model-gradle" target="11" />
+      <module name="learning-center-model-gradle.main" target="11" />
+      <module name="learning-center-model-gradle.test" target="11" />
+      <module name="learning-center-model1" target="11" />
+      <module name="learning-center-model1.main" target="11" />
+      <module name="learning-center-model1.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
