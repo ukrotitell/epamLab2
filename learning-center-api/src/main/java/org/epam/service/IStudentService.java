@@ -14,7 +14,7 @@ public interface IStudentService {
     List<Student> removeStudent(int id);
     double calculateAvgGrade(Student student);
     List<Student> filterStudents();
-    List<Student> sortByNameOrAvgGrade(Comparator<Student> comparator, List<Student> list);
+    List<Student> sortBy(Comparator<Student> comparator, List<Student> list);
     Map<Integer, Double> getGradesReport();
     List<Student> getListOfStudents();
 }

@@ -1,7 +1,0 @@
-org\epam\util\StudentsParserTest.class
-org\epam\util\PropertyParserTest.class
-org\epam\repository\StudentServiceTest.class
-org\epam\TestSuite.class
-org\epam\repository\StudentRepositoryTest.class
-org\epam\util\ProgramsParserTest.class
-org\epam\util\StudentsWriterTest.class

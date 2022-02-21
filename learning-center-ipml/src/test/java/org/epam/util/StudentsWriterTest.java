@@ -3,7 +3,7 @@ package org.epam.util;
 public class StudentsWriterTest {
 
 
-    /*@Test
+/*    @Test
     void shouldWriteInFile() throws IOException {
         String pathTest = "src/test/resources/students.txt";
         StudentsWriter studentsWriter = new StudentsWriter();
@@ -15,7 +15,7 @@ public class StudentsWriterTest {
                 "module1", 5,
                 "module2", 33
         ), 19.0);
-        studentsWriter.writeInFile(List.of(student1, student2), pathTest);
+        studentsWriter.writeInFile(pathTest, List.of(student1, student2));
         List<String> fileStream = Files.readAllLines(Paths.get(pathTest));
         int numberOfLines = fileStream.size();
         assertEquals(19, numberOfLines);

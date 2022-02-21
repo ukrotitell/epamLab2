@@ -1,3 +1,4 @@
+import lombok.extern.slf4j.Slf4j;
 import org.epam.operations.Operations;
 import org.epam.repository.IStudentRepository;
 import org.epam.repository.StudentRepository;
@@ -7,16 +8,16 @@ import org.epam.util.ConsoleOperations;
 import org.epam.util.StudentsParser;
 
 
-
+@Slf4j
 public class Main {
+
     public static void main(String[] args) throws Exception {
         StudentsParser studentsFile = new StudentsParser();
         IStudentRepository studentRepository = new StudentRepository(studentsFile);
         IStudentService studentService = new StudentService(studentRepository);
         ConsoleOperations consoleOperations = new ConsoleOperations();
         Operations operations = new Operations(studentService);
-
-
+        log.info("Приложение запускается");
         do {
             System.out.println("Выберите операцию:");
             System.out.println("1 - добавить студента!");

@@ -14,7 +14,7 @@ public interface IStudentRepository {
     void updateStudent(int index, Student student);
     List<Student> removeStudent(int id) ;
     List<Student> filterStudents();
-    List<Student> sortByNameOrAvgGrade(Comparator<Student> comparator, List<Student> list);
+    List<Student> sortBy(Comparator<Student> comparator, List<Student> list);
     Map<Integer, Double> getGradesReport();
     List<Student> getListOfStudents();
 }

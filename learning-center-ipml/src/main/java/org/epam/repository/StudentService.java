@@ -52,8 +52,8 @@ public class StudentService implements IStudentService {
     }
 
     @Override
-    public List<Student> sortByNameOrAvgGrade(Comparator<Student> comparator, List<Student> list) {
-        return studentRepository.sortByNameOrAvgGrade(comparator, list);
+    public List<Student> sortBy(Comparator<Student> comparator, List<Student> list) {
+        return studentRepository.sortBy(comparator, list);
     }
 
     @Override

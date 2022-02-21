@@ -75,8 +75,6 @@ public class StudentRepository implements IStudentRepository {
         return listOfStudents;
     }
 
-
-//переписать
     @Override
     public List<Student> filterStudents() {
         Predicate<Student> byGrade = student -> student.getAvgGrade() >= 75;
@@ -85,7 +83,7 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public List<Student> sortByNameOrAvgGrade(Comparator<Student> comparator, List<Student> list) {
+    public List<Student> sortBy(Comparator<Student> comparator, List<Student> list) {
 
         return list.stream().sorted(comparator).collect(Collectors.toList());
     }

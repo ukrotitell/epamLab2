@@ -1,4 +1,0 @@
-# Created at 2022-02-12T11:14:09.574
-Boot Manifest-JAR contains absolute paths in classpath 'D:\epamHomework\lab2\learning-center-ipml\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-

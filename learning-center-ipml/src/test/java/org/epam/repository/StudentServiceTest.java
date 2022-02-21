@@ -84,8 +84,8 @@ class StudentServiceTest {
     void sortByName() {
         Comparator<Student> sortByName = new Comparators().getSortByName();
         List<Student> returnList = List.of(student2, student1);
-        Mockito.when(studentRepository.sortByNameOrAvgGrade(sortByName, students)).thenReturn(returnList);
-        List<Student> result = studentService.sortByNameOrAvgGrade(sortByName, students);
+        Mockito.when(studentRepository.sortBy(sortByName, students)).thenReturn(returnList);
+        List<Student> result = studentService.sortBy(sortByName, students);
         assertEquals(returnList, result);
     }
 
@@ -93,8 +93,8 @@ class StudentServiceTest {
     void sortByAvgGrade() {
         Comparator<Student> sortByAvgGrade = new Comparators().getSortByAvgGrade();
         List<Student> returnList = List.of(student2, student1);
-        Mockito.when(studentRepository.sortByNameOrAvgGrade(sortByAvgGrade, students)).thenReturn(returnList);
-        List<Student> result = studentService.sortByNameOrAvgGrade(sortByAvgGrade, students);
+        Mockito.when(studentRepository.sortBy(sortByAvgGrade, students)).thenReturn(returnList);
+        List<Student> result = studentService.sortBy(sortByAvgGrade, students);
         assertEquals(returnList, result);
     }
 

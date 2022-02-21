@@ -33,6 +33,7 @@ public class StudentRepositoryTest {
     static Student student3 = new Student(2, "Marina", 1, Map.of("module2", 90), 90.0);
 
     private List<Student> students = new ArrayList<>();
+
     @BeforeEach
     public void setUp() {
         students.add(student1);
@@ -55,12 +56,15 @@ public class StudentRepositoryTest {
                 studentRepository.showStudents().toString());
     }
 
+    //возвращем ожидаемое значение
     @Test
     void findStudentById() {
         Student student = studentRepository.findStudentById(2);
         assertEquals(student.getId(), 2);
     }
 
+
+    //создать нового студента и его заменить на существующего
     @Test
     void updateStudent() {
         Student student = studentRepository.getListOfStudents().get(0);
@@ -88,13 +92,13 @@ public class StudentRepositoryTest {
 
     @Test
     void sortByName() {
-        List<Student> studentList = studentRepository.sortByNameOrAvgGrade(comparators.getSortByAvgGrade(), studentRepository.getListOfStudents());
+        List<Student> studentList = studentRepository.sortBy(comparators.getSortByAvgGrade(), studentRepository.getListOfStudents());
         assertEquals("Igor", studentList.get(0).getName());
     }
 
     @Test
     void sortByAvgGrade() {
-        List<Student> studentList = studentRepository.sortByNameOrAvgGrade(comparators.getSortByAvgGrade(), studentRepository.getListOfStudents());
+        List<Student> studentList = studentRepository.sortBy(comparators.getSortByAvgGrade(), studentRepository.getListOfStudents());
         assertEquals(70.0, studentList.get(0).getAvgGrade());
     }
 

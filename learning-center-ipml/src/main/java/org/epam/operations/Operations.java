@@ -1,6 +1,7 @@
 package org.epam.operations;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.epam.Module;
 import org.epam.Program;
 import org.epam.Student;
@@ -12,10 +13,10 @@ import org.epam.util.ProgramsParser;
 import org.epam.util.StudentsWriter;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 public class Operations {
     private ProgramsParser programsFile = new ProgramsParser();
     private ConsoleOperations consoleOperations = new ConsoleOperations();
@@ -37,7 +38,7 @@ public class Operations {
         int programId = consoleOperations.readIntFromConsole();
         Student student = new Student(id, name, programId, Map.of(), 0.0);
         studentService.addStudent(student);
-        System.out.println("Студент добавлен");
+        log.info("Студент добавлен");
     }
 
     public void setMark() throws FileNotFoundException, IllegalInitialDataException {
@@ -65,13 +66,14 @@ public class Operations {
         student.setAvgGrade(avgGrade / marks.size());
         int index = studentService.getListOfStudents().indexOf(student);
         studentService.updateStudent(index, student);
+        log.info("Оценка успешно изменена");
     }
 
     public void removeStudentFromList() {
         System.out.println("Введите id студента, которого удалить");
         int id = consoleOperations.readIntFromConsole();
         studentService.removeStudent(id);
-        System.out.println("Студент с id = " + id + " удален");
+        log.info("Студент удален");
     }
 
     public void countNumberOfDays() throws Exception {
@@ -116,10 +118,12 @@ public class Operations {
                 studentService.filterStudents()) {
             System.out.println(student);
         }
+        log.info("Студенты отфильтрованы");
     }
 
-    public void createReport() throws IOException {
-        studentsWriter.writeInFile(path);
+    public void createReport() {
+        studentsWriter.writeInFile(path, studentService.getListOfStudents());
+        log.info("Отчет создан");
     }
 
     public void getGradesReport() {
@@ -135,12 +139,13 @@ public class Operations {
         List<Student> studentList;
         int number = consoleOperations.readIntFromConsole();
         if (number == 1) {
-            studentList = studentService.sortByNameOrAvgGrade(comparators.getSortByName(), studentService.getListOfStudents());
+            studentList = studentService.sortBy(comparators.getSortByName(), studentService.getListOfStudents());
         } else {
-            studentList = studentService.sortByNameOrAvgGrade(comparators.getSortByAvgGrade(), studentService.getListOfStudents());
+            studentList = studentService.sortBy(comparators.getSortByAvgGrade(), studentService.getListOfStudents());
         }
         for (int i = 0; i < studentList.size(); i++) {
             System.out.println(studentList.get(i));
         }
+        log.info("Студенты отсортированы");
     }
 }
